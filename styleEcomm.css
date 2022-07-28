@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+.nice {
+    border-right: 2px solid black;
+}
+.now a{
+    font-size: 16px !important;
+    color:#252525;
+    text-decoration: none;
+    padding: 0px 12px;
+    font-weight: 400;
+   
+}
+.obj li {
+    display: inline-block !important;
+    display: none;
+}
+.now a:hover{
+    color:#7fad39;
+}
+.or li {
+    display: inline-block;
+    padding: 0px 9px;
+}
+.kk li {
+    padding: 0px 12px;
+}
+.kk a {
+    font-size: 24px;
+}
+.card {
+    border: none;
+}
