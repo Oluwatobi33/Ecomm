@@ -2,9 +2,7 @@
     let take = document.getElementById("on").innerHTML;
      document.getElementById("mm").innerHTML = take
 }
-const allIn =  ()=>{
-let allFruit = document.getElementById("all").innerHTML
-document.getElementById("space").innerHTML = allFruit
-
-}
- 
+// const orange =() =>{
+// let t2 = document.getElementById("oranges").innerHTML;
+// document.getElementById
+// }

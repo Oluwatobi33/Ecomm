@@ -21,9 +21,24 @@ body {
 .now a:hover{
     color:#7fad39;
 }
+.ope li {
+    list-style-type: none;
+    display: inline-block;
+}
+.media li {
+    display: inline-block;
+    padding: 12px 9px;
+    font-size: 23px;
+   
+}
+.media li:hover {
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 2px 12px;
+} 
 .or li {
     display: inline-block;
-    padding: 0px 9px;
+    padding: 0px 12px;
 }
 .kk li {
     padding: 0px 12px;
@@ -33,4 +48,9 @@ body {
 }
 .card {
     border: none;
+}
+.footer {
+    background-color:#f2f3f4; 
+    background-size: cover;
+    padding: 89px 0px;
 }
