@@ -117,11 +117,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <input type="text" class="form-control" value="" id="add" placeholder="Address">
               <div class="dd">
                 <small id="err3" class=""></small>
               </div>
+            </div>
+            <div class="col-md-6">
+              <input type="file" id="image_input" accept="image/png, image/jpg" class="form-control">
             </div>
            </div>
           <div class="row justify-content-center">
@@ -147,6 +150,7 @@
       }
       
     }
+
     function show(){
         if (fname.value == "" || lname.value == "" || add.value == "" || email.value == "" || pwd.value == "" || pass.value == "" || gen.value == ""){
         var firstname = fname.value;
@@ -222,21 +226,31 @@
         ffname: fname.value,
         LstName: lname.value,
         Address: add.value,
-        Email: email.value,
-
+        email: email.value,
         Password: pwd.value,
         PhoneNumber: pass.value,
         Gender: gen.value,
-        contact: [],
-        note:[],
-        event: []
-      } 
+        
+      }
       together.push(rush)
       localStorage.project = JSON.stringify(together)
-      console.log(together)
-      location.assign("sign-in.html")
-      }
-    }  
+      get = JSON.parse(localStorage.getItem("project"));
+     let take = get.find((items)=>{
+        console.log(items);
+        var tt = items.email
+        // if ( items.email != email.value){
+    
+        //   window.location.assign("sign-in.html")
+        // }else{
+        //   err4.innerText = "Email already exist";
+        //   err4.style.color = "red";
+        // }
+
+      })
+    }  }
+  </script>
+  <script>
+    //  const image_input =querySelector("#image_input");
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

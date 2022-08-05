@@ -17,6 +17,9 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <script type="text/javascript">
+    
+    </script>
     <style>
         .tt:hover {
             border: none;
@@ -87,7 +90,8 @@
     background-size: cover;
     padding: 89px 0px;
 }
-    </style>
+
+</style>
 </head>
 
 <body>
@@ -100,10 +104,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto now">
-                    <a href="index.html" class="active" style="color: #7fad39;">Home</a>
-                    <a href="#">Shop</a>
+                    <a href="../index.html" class="active" style="color: #7fad39;">Home</a>
+                    <a href="../reg/shop_details.html">Shop</a>
                     <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <a href="../contact/contact.html">Contact</a>
                 </div>
             </div>
             <div class="icon mx-3">
@@ -165,8 +169,8 @@
         <div class="container">
             <div class="row justify-content-center pt-5">
                 <div class="col-md-12 text-center">
-                    <h3 class="text-white" style="font-size: 73px;">Vegetable’s Package</h3>
-                    <a href="index.html" class="text-white text-decoration-none fs-5">Home --- Vegetable’s -- </a><span
+                    <h3 class="text-white" style="font-size: vw;">Vegetable’s Package</h3>
+                    <a href="index.html"  style="font-size: 13vw;" class="text-white text-decoration-none fs-5">Home-----Vegetable’s ----</a><span
                         class="text-white">Vegetables Package</span>
                 </div>
             </div>
@@ -175,7 +179,35 @@
     <div class="container mt-5">
         <div class="row" style="padding-top: 56px;">
             <div class="col-md-6">
-                <img src="./image/featured/feature-3.jpg" alt="vegetable" class="img-responsive img-fluid w-100">
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="./image/featured/feature-1.jpg" style="width:60%; height:auto">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="./image/featured/feature-2.jpg" style="width:60%; height:auto">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="./image/featured/feature-3.jpg" style="width:60%; height:auto">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="./image/featured/feature-4.jpg" style="width:60%; height:auto">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="./image/featured/feature-5.jpg" style="width:60%; height:auto">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="../image/featured/feature-6.jpg" style="width:60%; height:auto">
+                </div>
             </div>
             <div class="col-md-6" class="w-100">
                 <h3>Vetgetable’s Package</h3>
@@ -195,54 +227,45 @@
                     vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
                     vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
                 <div class="my-5">
-                    <div class="my-4" style="background-color: #f5f5f5; margin-bottom: 5px; display: inline-block;">
-                        <span style="color:#6f6f6f; width: 35px; cursor: pointer;" onclick="cart('-')">-</span>
+                    <div class="my-4" style="background-color: #f5f5f5; margin-bottom: 5px; display: inline-block;"> 
+                        <input type="text" value="-" id="sub"  style="cursor: pointer; width: 23px;" onclick="cart('-')">
                         <input type="text" value="1" id="ch" class="border-0 tt">
-                        <span style="color:#6f6f6f; width: 15px; cursor: pointer;" onclick="cart('+')">+</span>
-                        <a class="primary-btn mx-5" href="#"
-                            style="background-color:#7fad39; padding:13px 12px; text-decoration: none; color: white;">ADD
-                            TO CARD</a>
+                        <input type="text" value="+" id="add" style="cursor: pointer; width: 23px;" onclick="cart('+')">
+                        <a class="primary-btn mt-5 mx-5" href="#"
+                            style="background-color:#7fad39; padding:13px 12px; text-decoration: none; color: white;" onclick="addCart()">ADD TO CART</a>
                         <a><span><i class="icon_heart_alt"></i></span></a>
                     </div>
                     <span style="border: 2px solid black;">
                         <hr>
                     </span>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul style="list-style-type:none;">
-                            <li class="float-start"><b>Availability</b> </li>
-                                <span style="display: inline-block; position: relative; left: 45px;">In Stock</span>
-                          
-                            <li><b>Shipping</b>
-                                <span style="display: inline-block; position: relative; left: 45px;">01 day shipping.</span>
-                                <small  style="position: relative; left: 45px;"><a href="#" class="text-danger" >Free pickup today</a></small>
-                            </li>
-                            <li><b>Weight</b>
-                                <span style="display: inline-block; position: relative; left: 45px;" >0.5 kg</span>
-                            </li>
-                            <li class="float-start" style="font-size: 16px;">
-                                <b>Share on</b>
-                                <div class=" social" style="display: inline-block;position: relative; left: 45px;">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-pinterest"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </div>
+        </div> 
     </div>
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-12 text-center">
-                <h3 style="color: black;">Featured Product</h3>
-            </div>
-            <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
+    <div class="container">
+        <div class="row">
+           
+                <div class="col">
+                    <img class="demo cursor" src="./image/featured/feature-1.jpg" style="width:10%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="col">
+                    <img class="demo cursor" src="./image/featured/feature-2.jpg" style="width:10%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="col">
+                    <img class="demo cursor" src="./image/featured/feature-3.jpg" style="width:10%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="col">
+                    <img class="demo cursor" src="./image/featured/feature-4.jpg" style="width:10%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="col">
+                    <img class="demo cursor" src="./image/featured/feature-5.jpg" style="width:10%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="col">
+                    <img class="demo cursor" src="../image/featured/feature-6.jpg" style="width:10%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
         </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <div class="container" id="oranges">
         <div class="row">
@@ -337,24 +360,74 @@
                 </div>
                 <div class="col-md-4">
                     <img src="./image/payment-item.png" class="img-reponsive img-fluid">
+                    <button class="btn btn-primary">ope</button>
                 </div>
             </div>
         </div>
     </section>
     <script type="text/javascript">
-        const cart = (sub,add) => {
-            var subt = sub
-            var plus = add
-            const click = ch.value;
-            if (ch.value == 1) {
-                subt--
-                plus++
-
-
+        var subt = sub.value
+        var plus = add.value
+        var show = ch.value
+        const cart = (a) => {
+            if (a == "+"){
+                ch.value++   
+            }else if(a== "-"){
+                ch.value--;
+                if (ch.value <=0) {
+                    ch.value = 0
+                }
             }
-
+                
         } 
     </script>
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+   <script type="text/javascript">
+        shop = JSON.parse(localStorage.getItem("project"))
+        const addCart =()=>{ 
+        shop.map((item,index)=>{
+            if (item.email == item.Password){
+                window.location.assign("../cart.html")
+            }else{
+                window.location.assign("./index.html")
+            }
+            
+        })
+        console.log(shop);
+    }  
+        
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
