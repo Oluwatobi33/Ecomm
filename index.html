@@ -13,7 +13,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
-
+        <style>
+            .list {
+                list-style-type: none;
+            }
+        </style>
     </head>
     <body>
         <!-- <div class="container">
@@ -57,7 +61,7 @@
                             <button class="dropbtn">pages</button>
                             <div class="dropdown-content">
                               <a href="./reg/shop_details.html">Shopdetails</a>
-                              <a href="#">ShopCart</a>
+                              <a href="./reg/chart.html">ShopCart</a>
                               <a href="#">Checkout</a>
                             </div>
                         </div>
@@ -161,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-5" id="space">
+        <div class="container row mb-5" id="space">
 
         </div>
         <div class="container ">
@@ -284,9 +288,7 @@
         </section>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-                  
-        </script>
+       
         </script>
         <style>
             /* Dropdown Button */
@@ -342,7 +344,22 @@
 
       <script type="text/javascript">
         function allIn (){
-        document.getElementById("space").innerHTML = '<div class="container"><div class="row justify-content-center" ><div class="col-lg-3 my-4 text-center "><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-1.jpg" class="card-img-top" onmousemove="filler()" alt="feature-1"><div id="mm" style="position:relative; bottom: 90px;"></div><ul class="obj d-none" id="on" style="font-size:23px ;" ><li><i class="fa fa-heart px-2"></i></li><li><i class="fa fa-retweet px-2"></i></li><li><i class="fa fa-shopping-cart px-2"></i></li></ul><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4 "><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-2.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4"><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-3.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab P</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4"><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-4.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div></div><div class="row border border-0 justify-content-center"><div class="col-lg-3 my-4 "><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-5.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4"><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-6.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4"><div class="card border border-0" style="width: 18rem; "><img src="./image/featured/feature-7.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div><div class="col-lg-3 my-4"><div class="card border border-0" style="width: 18rem;"><img src="./image/featured/feature-8.jpg" class="card-img-top" alt="feature-1"><div class="card-body"><p class="card-text text-center">Crab Pool Security</p><h5 class="card-title text-center">#30.00</h5></div></div></div></div></div>'
+          landing = JSON.parse(localStorage.getItem("productSaved"))
+          landing.map((all,index)=>{
+            document.getElementById("space").innerHTML += `
+             <div class="col-lg-3">
+                    <div class="card border  border-0" style="width: 22rem;">
+                      <img src="${all.productImage}" class="card-img-top" alt="first-image">
+                    </div>
+                    <div class="card-body border  border-0">
+                      <ul class="list">
+                        <li>${all.productPrice}</li>
+                      <li>${all.proName}</li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-danger">Delete</button>
+                  </div>`
+          })
         }
         function orange() {
         document.getElementById("space").innerHTML = `<div class="container" id="oranges">
