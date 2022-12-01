@@ -14,10 +14,13 @@
       list-style-type: none;
       text-align: center;
     }
-    .section4 {
-       background-image: url(./image/ecommerce.jpg);background-repeat: no-repeat;
-       padding: 98vh auto;
-       background-size: cover;
+
+    .wallpaper {
+      background-image: url(./image/ecommerce.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
     }
   </style>
   <script>
@@ -25,45 +28,55 @@
   </script>
 </head>
 
-<body>
-  <section class="section4">
-    <div  class="container">
-      <div class="row mt-5 py-5">
-        <div class="col-md-12 row" id="disp1">
-  
-        </div>
+<body class="wallpaper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 row mx-2" id="disp1">
+
       </div>
     </div>
-  </section>
-  <div class="container" onload="spec()">
+  </div>
+  <div class="container mt-5" onload="spec()">
     <div class="row">
       <div class="col-md-4">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          UploadProduct
+          UPLOAD PRODUCT
         </button>
-
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content" style="padding: 78px 0px;">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">upload your product</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <input type="file" name="" id="imageId" onchange="imageUploaded(this)">
                 <br>
-                <div id="main" class="container">
+                <div class="container ">
+                  <div class="row">
+                    <div class="col-md-4" id="main">
 
+                    </div>
+                    <div class="col-md-4" id="main">
+
+                    </div>
+                    <div class="col-md-4" id="main">
+
+                    </div>
+                  </div>
                 </div>
-                
+
               </div>
               <div class="row justify-content-center">
                 <div class="col-md-6">
                   <input type="text" class="form-control mt-3" id="pname" placeholder=" product name" id="image_input">
                   <input type="number" class="form-control mt-3" id="price" placeholder="#ProductPrice">
-                  
+                  <select name="" id="">
+                    <option value="">ALL</option>
+                    <option value="">FRUITS</option>
+                  </select>
                 </div>
               </div>
               <div class="row justify-content-center">
@@ -78,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-3" id="disp1">
 
@@ -93,7 +106,15 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
+    <ul
+      style="list-style-type:none; background-color: blueviolet; width:204px; margin-top: 34px; color: white;cursor: pointer;">
+      <li>ALL</li>
+      <li>FRUITS</li>
+      <li>FRESH MEAT</li>
+      <li>VEGETABLES</li>
+      <li>FASTFOOD</li>
+    </ul>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"></script>
@@ -143,7 +164,7 @@
         imageId.value = ''
         static = JSON.parse(localStorage.getItem("productSaved"))
         static.map((take, i) => {
-         show +=
+          show +=
             `
                   <div class="col-lg-3">
                     <div class="card border  border-0" style="width: 22rem;">
@@ -157,9 +178,8 @@
                     </div>
                     <button class="btn btn-danger">Delete</button>
                   </div>
-              
             `
-            document.getElementById("disp1").innerHTML = show
+          document.getElementById("disp1").innerHTML = show
         })
         // localStorage.setItem("locaimage", JSON.stringify())
 

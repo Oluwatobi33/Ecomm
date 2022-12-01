@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>E-commerce website</title>
-        <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
-        <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
-        <link rel="stylesheet" href="splide-4.0.7/splide-4.0.7/dist/css/splide.min.css">
-        <link rel="stylesheet" href="styleEcomm.css">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
-        <style>
-            .list {
-                list-style-type: none;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="splide-4.0.7/splide-4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styleEcomm.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <style>
+        .list {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <ul>
@@ -48,307 +53,348 @@
                 </div>
             </div>
         </div> -->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-              <a class="navbar-brand mx-5" href="#"><img src="./image/logo.png" class="img-responsive img-fluid"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand mx-5" href="#"><img src="./image/logo.png" class="img-responsive img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto now">
-                        <a href="#" class="active" style="color: #7fad39;">Home</a>
-                        <div class="dropdown ">
-                            <button class="dropbtn">pages</button>
-                            <div class="dropdown-content">
-                              <a href="./reg/shop_details.html">Shopdetails</a>
-                              <a href="./reg/chart.html">ShopCart</a>
-                              <a href="#">Checkout</a>
-                            </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto now">
+                    <a href="#" class="active" style="color: #7fad39;">Home</a>
+                    <div class="dropdown ">
+                        <button class="dropbtn">pages</button>
+                        <div class="dropdown-content">
+                            <a href="./reg/shop_details.html">Shopdetails</a>
+                            <a href="./reg/chart.html">ShopCart</a>
+                            <a href="#">Checkout</a>
                         </div>
-                        <a href="./contact/contact.html">Contact</a>
-                        <a href="./reg/index.html">Register</a>
-                        <div id="uploadImage"></div>
                     </div>
-                </div>
-                <div class="icon mx-3">
-                    <ul>
-                        <li class="fa fa-heart"></li>
-                        <span>1</span>
-                        <li class="fa  fa-shopping-bag"></li>
-                        <span>3</span>
-                    </ul>
-                </div>
-                <div>
-                    <p>item:
-                    <span>#1500.00</span></p>
+                    <a href="./contact/contact.html">Contact</a>
+                    <a href="./reg/index.html">Register</a>
+                    <div id="uploadImage"></div>
                 </div>
             </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="dropdown">
-                        <div data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #7fad39; cursor:pointer; padding: 14px 0px; color: white;">
-                            <i class="fa fa-bars mx-3"></i>All departments
+            <div class="icon mx-3">
+                <ul>
+                    <li class="fa fa-heart"></li>
+                    <span>1</span>
+                    <li class="fa  fa-shopping-bag"></li>
+                    <span>3</span>
+                </ul>
+            </div>
+            <div>
+                <p>item:
+                    <span>#1500.00</span>
+                </p>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dropdown">
+                    <div data-bs-toggle="dropdown" aria-expanded="false"
+                        style="background-color: #7fad39; cursor:pointer; padding: 14px 12px; color: white;">
+                        <i class="fa fa-bars mx-3"></i>All departments
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-light kk">
+                        <li><a class="dropdown-item" href="#">Fresh Meat</a></li>
+                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                        <li><a class="dropdown-item" href="#">Fruit & Nut Gifts</a></li>
+                        <li><a class="dropdown-item" href="#">Fresh Berries</a></li>
+                        <li><a class="dropdown-item" href="#">Ocean Foods</a></li>
+                        <li><a class="dropdown-item" href="#">Butter & Eggs</a></li>
+                        <li><a class="dropdown-item" href="#">Fastfood</a></li>
+                        <li><a class="dropdown-item" href="#">Fresh Onion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" placeholder="What do you need?" required
+                            style="padding: 9px 34px; border: 1px solid gainsboro;" class="mt-3 mb-4">
+                        <a href="#" class="mt-2"
+                            style="background-color:#7fad39; color: white; text-decoration: none; padding: 9px 25px;">SEARCH</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="float-start">
+                            <i class="fa fa-phone mx-4 mt-3" style="color:#7fad39;"></i>
                         </div>
-                        <ul class="dropdown-menu dropdown-menu-light kk">
-                            <li><a class="dropdown-item" href="#">Fresh Meat</a></li>
-                            <li><a class="dropdown-item" href="#">Vegetables</a></li>
-                            <li><a class="dropdown-item" href="#">Fruit & Nut Gifts</a></li>
-                            <li><a class="dropdown-item" href="#">Fresh Berries</a></li>
-                            <li><a class="dropdown-item" href="#">Ocean Foods</a></li>
-                            <li><a class="dropdown-item" href="#">Butter & Eggs</a></li>
-                            <li><a class="dropdown-item" href="#">Fastfood</a></li>
-                            <li><a class="dropdown-item" href="#">Fresh Onion</a></li>
+                        <h2 style="color:#1c1c1c" class="fs-3 mt-3">+2347032437182</h2>
+                        <span class="mx-5" style="color: #6f6f6f;">support 24/7 time</span>
+                    </div>
+                </div>
+                <div class="image mt-4"
+                    style="background-image: url(./image/banner.jpg); background-size: cover; background-position: relative;height: 420px;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div style="position:relative; top:94px; left:18px">
+                                <span
+                                    style="color:#7fad39; text-transform:uppercase; font-weight:500;  font-size:23px;">FRUIT
+                                    FRESH</span>
+                                <h2 style="font-size:56px">Vegetable 100%<br>Organic</h2>
+                                <p style="color: #6f6f6f;" class="my-4">Free Pickup and Delivery Available</p>
+                                <a href="#" class="mt-2"
+                                    style="background-color:#7fad39; color: white; text-decoration: none; padding: 9px 19px;">SHOP
+                                    NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <section class="splide" aria-labelledby="carousel-heading">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <span class="splide__slide"><img src="./image/discount/pd-1.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
+                            <span class="splide__slide"><img src="./image/discount/pd-2.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
+                            <span class="splide__slide"><img src="./image/discount/pd-3.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
+                            <span class="splide__slide"><img src="./image/discount/pd-4.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
+                            <span class="splide__slide"><img src="./image/discount/pd-5.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
+                            <span class="splide__slide"><img src="./image/discount/pd-6.jpg"
+                                    class="img-responsive img-fluid w-30"></span>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text"  placeholder="What do you need?" required style="padding: 9px 34px; border: 1px solid gainsboro;" class="mt-3 mb-4">
-                             <a href="#" class="mt-2" style="background-color:#7fad39; color: white; text-decoration: none; padding: 9px 25px;">SEARCH</a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="float-start">
-                                <i class="fa fa-phone mx-4 mt-3" style="color:#7fad39;"></i>
-                            </div>
-                            <h2 style="color:#1c1c1c" class="fs-3 mt-3">+2347032437182</h2>
-                            <span class="mx-5" style="color: #6f6f6f;">support 24/7 time</span>
-                        </div>
-                    </div>
-                    <div class="image mt-4" style="background-image: url(./image/banner.jpg); background-size: cover; background-position: relative;height: 420px;" >
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div style="position:relative; top:94px; left:18px">
-                                    <span style="color:#7fad39; text-transform:uppercase; font-weight:500;  font-size:23px;">FRUIT FRESH</span>
-                                     <h2 style="font-size:56px">Vegetable 100%<br>Organic</h2>
-                                    <p style="color: #6f6f6f;" class="my-4">Free Pickup and Delivery Available</p>
-                                    <a href="#" class="mt-2" style="background-color:#7fad39; color: white; text-decoration: none; padding: 9px 19px;">SHOP NOW</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
-        <section class="splide" aria-labelledby="carousel-heading">
-            <div class="splide__track">
-                    <ul class="splide__list">
-                        <span class="splide__slide"><img src="./image/discount/pd-1.jpg" class="img-responsive img-fluid w-30"></span>
-                        <span class="splide__slide"><img src="./image/discount/pd-2.jpg" class="img-responsive img-fluid w-30"></span>
-                        <span class="splide__slide"><img src="./image/discount/pd-3.jpg" class="img-responsive img-fluid w-30"></span>
-                        <span class="splide__slide"><img src="./image/discount/pd-4.jpg" class="img-responsive img-fluid w-30"></span>
-                        <span class="splide__slide"><img src="./image/discount/pd-5.jpg" class="img-responsive img-fluid w-30"></span>
-                        <span class="splide__slide"><img src="./image/discount/pd-6.jpg" class="img-responsive img-fluid w-30"></span>
-                    </ul>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 style="color: black;">Featured Product</h3>
             </div>
-        </section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <h3 style="color: black;">Featured Product</h3>
-                </div>
-                <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
+            <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+                <ul style="list-style-type:none;" class="or">
+                    <li onclick="allIn()" class="text-uppercase fw-bold " style="cursor: pointer;">All</li>
+                    <li onclick="orange()" class="text-uppercase fw-bold " style="cursor: pointer;">fruits</li>
+                    <li onclick="fmeat()" class="text-uppercase fw-bold " style="cursor: pointer;"> Fresh Meat</li>
+                    <li onclick="veg()" class="text-uppercase fw-bold " style="cursor: pointer;"> Vegetables</li>
+                    <li onclick="food()" class="text-uppercase fw-bold " style="cursor: pointer;"> Fastfood</li>
+                </ul>
             </div>
         </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9 text-center">
-                    <ul style="list-style-type:none;" class="or">
-                        <li onclick="allIn()" class="text-uppercase fw-bold " style="cursor: pointer;">All</li>
-                        <li onclick="orange()" class="text-uppercase fw-bold " style="cursor: pointer;">fruits</li>
-                        <li onclick="fmeat()" class="text-uppercase fw-bold " style="cursor: pointer;"> Fresh Meat</li>
-                        <li onclick="veg()" class="text-uppercase fw-bold " style="cursor: pointer;"> Vegetables</li>
-                        <li onclick="food()" class="text-uppercase fw-bold " style="cursor: pointer;"> Fastfood</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container row mb-5" id="space">
+    </div>
+    <div class="container row mb-5" id="space">
 
-        </div>
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-6 mb-4">
-                    <img src="./banner/banner-1.jpg" alt=""  class="img-fluid img-responsive w-100">
-                </div>
-                <div class="col-md-6">
-                    <img src="./banner/banner-2.jpg" alt="" class="img-fluid img-responsive w-100">
-                </div>
+    </div>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-6 mb-4">
+                <img src="./banner/banner-1.jpg" alt="" class="img-fluid img-responsive w-100">
+            </div>
+            <div class="col-md-6">
+                <img src="./banner/banner-2.jpg" alt="" class="img-fluid img-responsive w-100">
             </div>
         </div>
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="colmd-12 text-center">
-                    <h3  class="h2 text-uppercase">From The Blog</h3>
-                </div>
-                <span style="border-bottom:6px solid#7fad39;width:74px; margin-bottom: 23px;"></span>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="colmd-12 text-center">
+                <h3 class="h2 text-uppercase">From The Blog</h3>
             </div>
+            <span style="border-bottom:6px solid#7fad39;width:74px; margin-bottom: 23px;"></span>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border  border-0" style="width: 22rem;">
-                        <img src="./blog/blog-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body border  border-0">
-                          <ul class="ope">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border  border-0" style="width: 22rem;">
+                    <img src="./blog/blog-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body border  border-0">
+                        <ul class="ope">
                             <li><i class="fa fa-calendar-o"></i></li>
                             <li>May 4,2019 <i class="fa fa-comment-o"></i> <span>5</span></li>
-                          </ul>
-                           <h5 class="card-title">Cooking tips make cooking simple</h5>
-                          <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
+                        </ul>
+                        <h5 class="card-title">Cooking tips make cooking simple</h5>
+                        <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                            quaerat </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border  border-0" style="width: 22rem;">
-                        <img src="./blog/blog-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <ul class="ope">
+            </div>
+            <div class="col-md-4">
+                <div class="card border  border-0" style="width: 22rem;">
+                    <img src="./blog/blog-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="ope">
                             <li><i class="fa fa-calendar-o"></i></li>
-                            <li>  May 4,2019  <i class="fa fa-comment-o"></i>  <span>5</span></li>
-                          </ul>
-                           <h5 class="card-title">6 ways to prepare breakfast for 30</h5>
-                          <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
+                            <li> May 4,2019 <i class="fa fa-comment-o"></i> <span>5</span></li>
+                        </ul>
+                        <h5 class="card-title">6 ways to prepare breakfast for 30</h5>
+                        <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                            quaerat </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border  border-0" style="width: 22rem;">
-                        <img src="./blog/blog-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <ul class="ope">
+            </div>
+            <div class="col-md-4">
+                <div class="card border  border-0" style="width: 22rem;">
+                    <img src="./blog/blog-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <ul class="ope">
                             <li><i class="fa fa-calendar-o"></i></li>
-                            <li>  May 4,2019  <i class="fa fa-comment-o"></i> <span>5</span></li>
-                          </ul>
-                           <h5 class="card-title">Visit the clean farm in the US</h5>
-                          <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
+                            <li> May 4,2019 <i class="fa fa-comment-o"></i> <span>5</span></li>
+                        </ul>
+                        <h5 class="card-title">Visit the clean farm in the US</h5>
+                        <p class="card-text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                            quaerat </p>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 mt-2">
-                        <img src="./image/logo.png" alt="logo" class="img-reponsive ms-4 img-fluid">
-                        <ul class="text-white " style="list-style-type: none;">
-                            <li class="py-2 text-dark">Address: 60-49<br> Road 11378 New York</li>
-                            <li class="py-3 text-dark">Phone: +65 11.188.888</li>
-                            <li class="text-dark">Email: hello@colorlib.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 mt-4">
-                        <h4 class="ms-4">Useful Links</h4>
-                        <ul style="list-style-type:none;">
-                            <li>About Us</li>
-                            <li>About Our Shop</li>
-                            <li>Secure Shopping</li>
-                            <li>Delivery infomation</li>
-                            <li>Privacy Policy</li>
-                            <li>Our Sitemap</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 mt-5">
-                        <ul style="list-style-type:none">
-                            <li>Who We Are</li>
-                            <li>Our Services</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
-                            <li>Innovation</li>
-                            <li>Testimonials</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <h3>Join Our Newsletter Now</h3>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <input type="text" style="background-color:white; border: 1px solid gainsboro;" class="py-2" placeholder="Enter the email">
-                        <a class="text-white" href="#" style="background-color: rgb(0, 119, 255); padding: 10px 23px;text-decoration:none; font-size: 15px;">Subcribe</a>
-                        <ul style="list-style-type:none" class="media">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </div>
+    </div>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 mt-2">
+                    <img src="./image/logo.png" alt="logo" class="img-reponsive ms-4 img-fluid">
+                    <ul class="text-white " style="list-style-type: none;">
+                        <li class="py-2 text-dark">Address: 60-49<br> Road 11378 New York</li>
+                        <li class="py-3 text-dark">Phone: +65 11.188.888</li>
+                        <li class="text-dark">Email: hello@colorlib.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mt-4">
+                    <h4 class="ms-4">Useful Links</h4>
+                    <ul style="list-style-type:none;">
+                        <li>About Us</li>
+                        <li>About Our Shop</li>
+                        <li>Secure Shopping</li>
+                        <li>Delivery infomation</li>
+                        <li>Privacy Policy</li>
+                        <li>Our Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <ul style="list-style-type:none">
+                        <li>Who We Are</li>
+                        <li>Our Services</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                        <li>Innovation</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h3>Join Our Newsletter Now</h3>
+                    <p>Get E-mail updates about our latest shop and special offers.</p>
+                    <input type="text" style="background-color:white; border: 1px solid gainsboro;" class="py-2"
+                        placeholder="Enter the email">
+                    <a class="text-white" href="#"
+                        style="background-color: rgb(0, 119, 255); padding: 10px 23px;text-decoration:none; font-size: 15px;">Subcribe</a>
+                    <ul style="list-style-type:none" class="media">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="#" class="text-decoration-none">Colorlib</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./image/payment-item.png" class="img-reponsive img-fluid">
-                    </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by
+                        <a href="#" class="text-decoration-none">Colorlib</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./image/payment-item.png" class="img-reponsive img-fluid">
                 </div>
             </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-       
-        </script>
-        <style>
-            /* Dropdown Button */
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+    </script>
+    <style>
+        /* Dropdown Button */
         .dropbtn {
-        /* background-color: #04AA6D; */
-        color: black;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
+            /* background-color: #04AA6D; */
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
         }
 
         /* The container <div> - needed to position the dropdown content */
         .dropdown {
-        position: relative;
-        display: inline-block;
+            position: relative;
+            display: inline-block;
         }
 
         /* Dropdown Content (Hidden by Default) */
         .dropdown-content {
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
 
         /* Links inside the dropdown */
         .dropdown-content a {
-        color: black;
-        padding: 9px 16px;
-        text-decoration: none;
-        display: block;
-        background-color: aliceblue;
+            color: black;
+            padding: 9px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: aliceblue;
         }
-            .dropdown-content a:hover {color:#3e8e41;}
-            /* Show the dropdown menu on hover */
-            .dropdown:hover .dropdown-content {display: block;}
 
-            /* Change the background color of the dropdown button when the dropdown content is shown */
-            .dropdown:hover .dropbtn {background-color: #3e8e41;}
-        </style>
-        </script>
-        <script type="text/javascript">
-        document.addEventListener( 'DOMContentLoaded', function() {
-            var splide = new Splide( '.splide' );
+        .dropdown-content a:hover {
+            color: #3e8e41;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide');
             splide.mount();
-        } );
-        </script>
-        <script src="splide-4.0.7/splide-4.0.7/dist/js/splide.js"></script>
-        <script src="fontawesome/js/fontawesome.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
-      <script src="bootstrap5/js/bootstrap.js"></script>
+        });
+    </script>
+    <script src="splide-4.0.7/splide-4.0.7/dist/js/splide.js"></script>
+    <script src="fontawesome/js/fontawesome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="bootstrap5/js/bootstrap.js"></script>
 
-      <script type="text/javascript">
-        function allIn (){
-          landing = JSON.parse(localStorage.getItem("productSaved"))
-          landing.map((all,index)=>{
-            document.getElementById("space").innerHTML += `
+    <script type="text/javascript">
+        function allIn() {
+            landing = JSON.parse(localStorage.getItem("productSaved"))
+            landing.map((all, index) => {
+                document.getElementById("space").innerHTML += `
              <div class="col-lg-3">
-                    <div class="card border  border-0" style="width: 22rem;">
+                    <div class="card border  border-0" style="width: 16rem;">
                       <img src="${all.productImage}" class="card-img-top" alt="first-image">
                     </div>
                     <div class="card-body border  border-0">
@@ -357,12 +403,12 @@
                       <li>${all.proName}</li>
                       </ul>
                     </div>
-                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-danger">Delete Product</button>
                   </div>`
-          })
+            })
         }
         function orange() {
-        document.getElementById("space").innerHTML = `<div class="container" id="oranges">
+            document.getElementById("space").innerHTML = `<div class="container" id="oranges">
             <div class="row">
                 <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
@@ -402,11 +448,11 @@
                 </div>
             </div>
         </div>`
-    }
-    function fmeat(){
-        document.getElementById("space").innerHTML = `<div class="container" id="meat">
+        }
+        function fmeat() {
+            document.getElementById("space").innerHTML = `<div class="container" id="meat">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -415,7 +461,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -424,7 +470,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -433,7 +479,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -444,11 +490,11 @@
                 </div>
             </div>
         </div>`
-    }
-    function veg() {
-        document.getElementById("space").innerHTML =`<div class="container" id="vege">
+        }
+        function veg() {
+            document.getElementById("space").innerHTML = `<div class="container" id="vege">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -457,7 +503,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -466,7 +512,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -475,7 +521,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -486,11 +532,11 @@
                 </div>
             </div>
         </div>`
-    }
-    function food(){
-        document.getElementById("space").innerHTML = ` <div class="container" id="ff">
+        }
+        function food() {
+            document.getElementById("space").innerHTML = ` <div class="container" id="ff">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border  border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -499,7 +545,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border  border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -508,7 +554,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border  border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -517,7 +563,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border  border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -528,8 +574,9 @@
                 </div>
             </div>
         </div>`
-    }
-   
-      </script>  
-    </body>
+        }
+
+    </script>
+</body>
+
 </html>
