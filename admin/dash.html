@@ -107,14 +107,14 @@
         </div>
       </div>
     </div> -->
-    <ul
+    <!-- <ul
       style="list-style-type:none; background-color: blueviolet; width:204px; margin-top: 34px; color: white;cursor: pointer;">
       <li>ALL</li>
       <li>FRUITS</li>
       <li>FRESH MEAT</li>
       <li>VEGETABLES</li>
       <li>FASTFOOD</li>
-    </ul>
+    </ul> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"></script>
@@ -129,7 +129,6 @@
         if (localStorage.productSaved) {
           carImage = JSON.parse(localStorage.productSaved)
         }
-
       }
       let base64String = "";
       function imageUploaded() {
@@ -142,7 +141,6 @@
           }
           console.log(base64String);
         }
-
         reader.readAsDataURL(file);
       }
       var carImage = [];
