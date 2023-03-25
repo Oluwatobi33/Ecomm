@@ -73,7 +73,7 @@
       <div class="row justify-content-center nice ">
         <div class="col-11 ">
           <div class="row justify-content-center mt-5 ">
-            <h1 class=" fw-bold text-center text-uppercase text-white mt-4" style="font-size:19px ;">Registration
+            <h1 class=" fw-bold text-center text-uppercase text-white mt-4" style="font-size:19px;">Registration
               page</h1>
             <div class="col-md-6">
               <input type="text" class="form-control"  value="" id="fname" placeholder="FirstName">
@@ -96,7 +96,11 @@
                 </div>
               </div>
               <div class="col-md-6">
+<<<<<<< HEAD
                 <input type="text" class="form-control" value="" id="email" placeholder="Email">
+=======
+                <input type="text" class="form-control" value="" id="mail" placeholder="Email">
+>>>>>>> parent of 73212d8 (i added the admin place)
                 <div class="dd">
                   <small id="err4" class=""></small>
                 </div>
@@ -143,16 +147,15 @@
     </div>
   </div>
   <script type="text/javascript">
-    var together = []
+    var allUsers = []
     function spec(){
       if (localStorage.project) {
-        together = JSON.parse(localStorage.project)
+        allUsers = JSON.parse(localStorage.project)
       }
       
     }
-
     function show(){
-        if (fname.value == "" || lname.value == "" || add.value == "" || email.value == "" || pwd.value == "" || pass.value == "" || gen.value == ""){
+        if (fname.value == "" || lname.value == "" || add.value == "" || mail.value == "" || pwd.value == "" || pass.value == "" || gen.value == ""){
         var firstname = fname.value;
         var regfname = /^[a-zA-z]{3,15}$/;
         if (regfname.test(firstname)==false){
@@ -183,7 +186,7 @@
           console.log(regadd.test(address));
         }
         
-        var Email = email.value;
+        var Email = mail.value;
         var regemail = /^([\w]+)([@])([a-z]{3,7})([.])([a-z]{3,6})(([.][a-z]{2,5})?)$/;
         if (regemail.test(Email)==false){
             err4.innerText = "Enter your Email";
@@ -226,28 +229,53 @@
         ffname: fname.value,
         LstName: lname.value,
         Address: add.value,
-        email: email.value,
+        email: mail.value,
         Password: pwd.value,
         PhoneNumber: pass.value,
         Gender: gen.value,
         
       }
-      together.push(rush)
-      localStorage.project = JSON.stringify(together)
-      get = JSON.parse(localStorage.getItem("project"));
-     let take = get.find((items)=>{
-        console.log(items);
-        var tt = items.email
-        // if ( items.email != email.value){
+      //  console.log(rush);
+      allUsers.push(rush) 
+
+      let ggmail = JSON.parse(localStorage.getItem("project"))
+      // console.log(ggmail);
+      ggmail.map((items)=>{
+      let em = items[i].email
+      let found = ggmail.find((val)=>(val.email == mail.value))
+        console.log(found);
+      //  console.log(em); 
+        if (found){
+        err4.innerText = "Email already exist";
+        err4.style.color = "red";
+        }else{
+        localStorage.setItem("project", JSON.stringify(allUsers))
+        }
+        
+      })
+      }
+      
+           
+        // 
+      
+      // let allUsers = localStorage.project? JSON.parse(localStorage.project):[]
+      // let emailFinder = allUsers? allUsers.find((val) => val.email == mail.val):null;
+      // 
+      }   
+      // console.log(allUsers);
+    //   get = JSON.parse(localStorage.getItem("project"));
+    //  let take = get.find((items)=>{
+    //     console.log(items);
+    //     var tt = items.email
+    //     // if ( items.email != email.value){
     
         //   window.location.assign("sign-in.html")
         // }else{
         //   err4.innerText = "Email already exist";
         //   err4.style.color = "red";
         // }
-
-      })
-    }  }
+      
+    
   </script>
   <script>
     //  const image_input =querySelector("#image_input");

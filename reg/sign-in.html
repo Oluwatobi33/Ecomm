@@ -36,11 +36,13 @@
             color: rgb(25, 25, 87);
             padding-left: 200px;
         }
+
         .error {
             border: 2px solid white;
             height: 22px;
             border: none;
         }
+
         small {
             padding: 14px 0px;
             height: 12px;
@@ -68,7 +70,7 @@
     </style>
 </head>
 
-<body class="bg-dark">        
+<body class="bg-dark">
     <div class="container px-2 bos">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -77,7 +79,7 @@
                 <div class="error">
                     <small id="e1"></small>
                 </div>
-                
+
                 <input type="text" id="pwd" class="form-control border rounded my-2 " placeholder="Your password">
                 <div class="error">
                     <small id="e2"></small>
@@ -87,43 +89,44 @@
                     <!-- <a href="#" onclick="" class="for"><span type="button" data-bs-toggle="modal" data-bs-target="#examModal">Forget password?</span></a> -->
                 </div>
                 <center class="pt-1">
-                    <button type="submit" class="btn btn-primary col-3 fs-5 fst-italic" onclick="login()">SIGN-IN</button>
+                    <button type="submit" class="btn btn-primary col-8 fs-5 fst-italic"
+                        onclick="login()">SIGN-IN</button>
                 </center>
-            </div> 
-        </div>  
+            </div>
+        </div>
     </div>
     <img src="./index.html" alt="">
     <script type="text/javascript">
         function login() {
             tobi = JSON.parse(localStorage.getItem("project"));
             console.log(tobi);
-            if (email.value == "" &&  pwd.value == "") {
+            if (email.value == "" && pwd.value == "") {
                 e1.innerHTML = "Enter the value of email"
                 e1.style.color = "red"
                 e2.innerHTML = "Enter the value of password"
                 e2.style.color = "red"
             }
-           tobi.map((item,index)=>{
-            if(tobi[index].email == email.value && tobi[index].Password == pwd.value){
-                localStorage.email = JSON.stringify(email.value)
-                // var AnotherEmail = email.value;
-                // if (AnotherEmail == email.value){
-                //     e1.innerHTML = "Enter the correct email"
-                //     e1.style.color = "red";
-                // }  
-                window.location.href = "../chart.html"
-             
-            }else{
-            e1.innerHTML = "Enter the correct email"
-            e1.style.color = "red";
-            e2.innerHTML = "Enter the correct password"
-            e2.style.color = "red";
-            }
+            tobi.map((item, index) => {
+                if (tobi[index].email == email.value && tobi[index].Password == pwd.value) {
+                    localStorage.email = JSON.stringify(email.value)
+                    // var AnotherEmail = email.value;
+                    // if (AnotherEmail == email.value){
+                    //     e1.innerHTML = "Enter the correct email"
+                    //     e1.style.color = "red";
+                    // }  
+                    window.location.href = "./chart.html"
+
+                } else {
+                    e1.innerHTML = "Enter the correct email"
+                    e1.style.color = "red";
+                    e2.innerHTML = "Enter the correct password"
+                    e2.style.color = "red";
+                }
 
             })
-               
 
-            
+
+
             // if (email.value != "" && pwd.value != "") {
             //     for(const a of tobi){
             //         if (a["Email"] == email.value && a["Password"] == pwd.value) {
