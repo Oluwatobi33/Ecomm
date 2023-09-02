@@ -96,11 +96,7 @@
                 </div>
               </div>
               <div class="col-md-6">
-<<<<<<< HEAD
                 <input type="text" class="form-control" value="" id="email" placeholder="Email">
-=======
-                <input type="text" class="form-control" value="" id="mail" placeholder="Email">
->>>>>>> parent of 73212d8 (i added the admin place)
                 <div class="dd">
                   <small id="err4" class=""></small>
                 </div>
@@ -108,7 +104,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control" value="" id="pwd" placeholder="Password">
+              <input type="password" class="form-control" value="" id="pwd" placeholder="Password">
               <div class="dd">
                 <small id="err5" class=""></small>
               </div>
@@ -121,16 +117,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <input type="text" class="form-control" value="" id="add" placeholder="Address">
               <div class="dd">
                 <small id="err3" class=""></small>
               </div>
             </div>
-            <div class="col-md-6">
-              <input type="file" id="image_input" accept="image/png, image/jpg" class="form-control">
-            </div>
-           </div>
           <div class="row justify-content-center">
             <div class="col-md-12 text-center mt-2">
               <small class="text-white mx-2 fs-5 ss fst-italic">ALREADY SIGN IN<a class="fs-5 text-danger fst-italic ps-3" href="sign-in.html"
@@ -155,7 +147,7 @@
       
     }
     function show(){
-        if (fname.value == "" || lname.value == "" || add.value == "" || mail.value == "" || pwd.value == "" || pass.value == "" || gen.value == ""){
+        if (fname.value == "" || lname.value == "" || add.value == "" || email.value == "" || pwd.value == "" || pass.value == "" || gen.value == ""){
         var firstname = fname.value;
         var regfname = /^[a-zA-z]{3,15}$/;
         if (regfname.test(firstname)==false){
@@ -186,7 +178,7 @@
           console.log(regadd.test(address));
         }
         
-        var Email = mail.value;
+        var Email = email.value;
         var regemail = /^([\w]+)([@])([a-z]{3,7})([.])([a-z]{3,6})(([.][a-z]{2,5})?)$/;
         if (regemail.test(Email)==false){
             err4.innerText = "Enter your Email";
@@ -229,22 +221,18 @@
         ffname: fname.value,
         LstName: lname.value,
         Address: add.value,
-        email: mail.value,
+        email: email.value,
         Password: pwd.value,
         PhoneNumber: pass.value,
         Gender: gen.value,
-        
       }
-      //  console.log(rush);
       allUsers.push(rush) 
-
       let ggmail = JSON.parse(localStorage.getItem("project"))
       // console.log(ggmail);
       ggmail.map((items)=>{
       let em = items[i].email
       let found = ggmail.find((val)=>(val.email == mail.value))
         console.log(found);
-      //  console.log(em); 
         if (found){
         err4.innerText = "Email already exist";
         err4.style.color = "red";
@@ -253,9 +241,7 @@
         }
         
       })
-      }
-      
-           
+      }      
         // 
       
       // let allUsers = localStorage.project? JSON.parse(localStorage.project):[]

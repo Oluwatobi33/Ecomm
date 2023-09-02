@@ -24,7 +24,7 @@
     </style>
 </head>
 
-<body>
+<body onclick="landing()">
     <!-- <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <a href="./contact/contact.html">Contact</a>
-                    <a href="./reg/index.html">Register</a>
+                    <a href="./admin/sign-up.html">Register</a>
                     <div id="uploadImage"></div>
                 </div>
             </div>
@@ -75,10 +75,17 @@
     </nav>
     <div class="container">
         <div class="row">
+            <marquee behavior="small" direction="relative">
+                <h2>Register to uplaod product</h2>
+            </marquee>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-md-3">
                 <div class="dropdown">
                     <div data-bs-toggle="dropdown" aria-expanded="false"
-                        style="background-color: #7fad39; cursor:pointer; padding: 14px 0px; color: white;">
+                        style="background-color: #7fad39; cursor:pointer; padding: 14px 13px; color: white;">
                         <i class="fa fa-bars mx-3"></i>All departments
                     </div>
                     <ul class="dropdown-menu dropdown-menu-light kk">
@@ -168,8 +175,9 @@
             </div>
         </div>
     </div>
-    <div class="container row mb-5" id="space">
-
+    <div class="container mb-5">
+        <div class="row" id="space">
+        </div>
     </div>
     <div class="container ">
         <div class="row ">
@@ -233,14 +241,14 @@
                     </div>
                 </div>
             </div>
-            <span style="border-bottom:6px solid#7fad39;width:74px; margin-bottom: 23px;"></span>
+            <!-- <span style="border-bottom:6px solid#7fad39;width:74px; margin-bottom: 23px;"></span> -->
         </div>
     </div>
     <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 mt-2">
-                    <img src="./image/logo.png" alt="logo" class="img-reponsive ms-4 img-fluid">
+                    <!-- <img src="./image/logo.png" alt="logo" class="img-reponsive ms-4 img-fluid"> -->
                     <ul class="text-white " style="list-style-type: none;">
                         <li class="py-2 text-dark">Address: 60-49<br> Road 11378 New York</li>
                         <li class="py-3 text-dark">Phone: +65 11.188.888</li>
@@ -364,13 +372,17 @@
     <script src="fontawesome/js/fontawesome.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
     <script src="bootstrap5/js/bootstrap.js"></script>
-
+    <script type="text/javascript">
+        // function landing() {
+        //     window.location.href = "../sign-up.html"
+        // }
+    </script>
     <script type="text/javascript">
         function allIn() {
             landing = JSON.parse(localStorage.getItem("productSaved"))
             landing.map((all, index) => {
                 document.getElementById("space").innerHTML += `
-             <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="card border  border-0" style="width: 22rem;">
                       <img src="${all.productImage}" class="card-img-top" alt="first-image">
                     </div>
@@ -381,7 +393,8 @@
                       </ul>
                     </div>
                     <button class="btn btn-danger">Delete</button>
-                  </div>`
+                </div>
+                `
             })
         }
         function orange() {
